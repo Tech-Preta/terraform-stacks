@@ -26,22 +26,12 @@ Este repositório é um template para projetos Terraform, com foco em segurança
 - **Função:** Gera SBOM (Software Bill of Materials) e faz varredura de vulnerabilidades em dependências e imagens, integrando resultados ao GitHub Dependency Graph.
 - **Segurança:** Ajuda a identificar componentes vulneráveis presentes no projeto.
 
-### 4. Scorecard Supply-chain Security
-- **Arquivo:** `.github/workflows/scorecard.yml`
-- **Função:** Usa o [OSSF Scorecard](https://github.com/ossf/scorecard) para avaliar práticas de segurança da cadeia de suprimentos do repositório.
-- **Segurança:** Analisa branch protection, dependabot, workflows, tokens, entre outros.
-
-### 5. OSV-Scanner
-- **Arquivo:** `.github/workflows/osv-scanner.yml`
-- **Função:** Executa o [OSV-Scanner](https://osv.dev/) para identificar vulnerabilidades conhecidas em dependências.
-- **Segurança:** Automatiza a checagem contínua de vulnerabilidades em bibliotecas e módulos.
-
-### 6. Dependency Review
+### 4. Dependency Review
 - **Arquivo:** `.github/workflows/dependency-review.yml`
 - **Função:** Bloqueia PRs que introduzem dependências vulneráveis conhecidas, usando o GitHub Dependency Review Action.
 - **Segurança:** Garante que novas dependências estejam livres de vulnerabilidades conhecidas.
 
-### 7. CodeQL Analysis (opcional)
+### 5. CodeQL Analysis (opcional)
 - **Arquivo:** (não incluído por padrão)
 - **Função:** Executa análise estática de segurança aprofundada com CodeQL para identificar vulnerabilidades no código.
 - **Segurança:** Detecta padrões de código problemáticos que podem levar a vulnerabilidades, com base em queries mantidas pela comunidade e pelo GitHub.
